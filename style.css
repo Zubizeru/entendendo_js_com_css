@@ -1,0 +1,145 @@
+.container {
+    /* Define o layout para organizar as divs */
+    display: flex;
+    /* Distribuição do espaço entre coluna e centro */
+    justify-content: space-between;
+    /* Define o espaçamento interno do container */
+    padding: 10px;
+    /* Define espaçamento externo do conteiner*/
+    margin: 0 auto;
+    /* Define borda do conteiner*/ 
+    border: none; 
+    /* Define largura do contêiner*/
+    width: 100%;
+    /*Define altura do conteiner*/
+    height: 100%;
+}
+
+.centro {
+    /* Define o layout para organizar div */
+    display: flex;
+    /* Define direção do layout */
+    flex-direction: column;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Define borda */
+    border: none;
+    /* Define espaçamento interno */
+    padding-block-start: 50px;
+    /*Define altura do centro*/
+    height: 100%;
+}
+
+.coluna {
+    /* Define o tipo de layout para a coluna */
+    display: flex;
+    /* Organiza o conteúdo em uma coluna verticalmente */
+    flex-direction: column;
+    /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Define borda*/
+    border: none;
+    /*Define altura da coluna*/
+    height: 100%;
+}
+
+/* Estilo padrão para telas grandes (desktop) */
+@media only screen and (min-width: 1024px) {
+    .coluna {
+        width: 30%;
+    }
+    .centro {
+        width: 40%;
+    }
+    button {
+        width: 10rem;
+        height: 4rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Estilo para tablets (768px a 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .coluna {
+        width: 45%;
+    }
+    .centro {
+        width: 50%;
+    }
+    button {
+        width: 8rem;
+        height: 3.2rem;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Estilo para telas móveis (menores que 768px) */
+@media only screen and (max-width: 767px) {
+    .coluna {
+        width: 100%;
+    }
+    .centro {
+        width: 100%;
+    }
+    button {
+        width: 6rem;
+        height: 2.0rem;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+button {
+    /* Exibe o botão como um bloco */
+    display: block;
+    /* Define a margem inferior entre o botão e o conteúdo abaixo */
+    margin-bottom: 10px;
+    /* Define a cor de fundo do botão */
+    background: linear-gradient(45deg, #5dd567, #FF96FF);
+    /* Define a cor do texto do botão */
+    color: #ffffff;
+    /* Contorno do texto */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    /* Define a fonte do botão */
+    font-family: 'Roboto', 'sans-serif';
+    /* Define a borda do botão com 2 pixels de espessura e cor */
+    border: 2px solid black;
+    /* Curva da borda */
+    border-radius: 10px;
+    /* Sombra do botão */
+    box-shadow: 0 6px 10px #E2D283;
+}
+
+button:hover {
+    /* Altera a cor de fundo do botão ao passar o cursor */
+    background: linear-gradient(45deg, #2f8703, #a507a5);
+}
+
+body {
+    /* Define a cor de fundo da página */
+    background-color: black;
+}
+
+h1 {
+    /* Alinha o texto do h1 */
+    text-align: center;
+    /* Define a fonte do texto do h1 */
+    font-family: 'Jokerman', fantasy;
+    /* Define a cor do texto do h1 */
+    color: #5dd567;
+    /* Contorno do texto */
+    text-shadow: -1px -1px 0 #2f8703, 1px -1px 0 #2f8703, -1px 1px 0 #2f8703, 1px 1px 0 #2f8703;
+    /* Tamanho da fonte */
+    font-size: 45px
+}
+
+p {
+    /* Define a fonte do texto dos parágrafos */
+    font-family: 'Times New Roman', serif;
+}
