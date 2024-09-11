@@ -1,17 +1,12 @@
 function executarExercicio16() {
-    // Montagem da função de cálculo
-    function calcularAreaRetangulo(base, altura) {
-        let area = base * altura;
-        return area;
-    }
-
-    // Declarando as variáveis
-    let infoPrompt = "Informe a Base do Retângulo:";
-    let baseRetangulo = parseInt(prompt(infoPrompt));
-    infoPrompt = "Informe a Altura do Retângulo:";
-    let alturaRetangulo = parseInt(prompt(infoPrompt));
-
-    // Chamando a função
+    let baseRetangulo = parseFloat(prompt("Informe a Base do Retângulo:"));
+    let alturaRetangulo = parseFloat(prompt("Informe a Altura do Retângulo:"));
     let resultado = calcularAreaRetangulo(baseRetangulo, alturaRetangulo);
-    alert(`A área do retângulo é: ${resultado}`);
+    alert(`A área do retângulo é: ${resultado.toFixed(2)}`);
+    calcularAreaRetangulo();
+}
+
+function calcularAreaRetangulo(base, altura) {
+    let area = base * altura;
+    return area;
 }
